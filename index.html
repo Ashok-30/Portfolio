@@ -872,19 +872,19 @@
 
 			// Prepare the template params
 			var templateParams = {
-				from_name: document.getElementById('InputName').value,
-				from_email: document.getElementById('InputEmail').value,
-				subject: document.getElementById('InputSubject').value,
-				message: document.getElementById('InputMessage').value
-			};
+  from_name: document.getElementById('InputName').value,
+  from_email: document.getElementById('InputEmail').value,
+  subject: document.getElementById('InputSubject').value,
+  message: document.getElementById('InputMessage').value
+};
 
-			// Send email
-			emailjs.send('service_zooj6bw', 'template_pd9ggzz', templateParams)
-				.then(function (response) {
-					alert('Message sent successfully!');
-				}, function (error) {
-					alert('Failed to send message. Error: ' + JSON.stringify(error));
-				});
+emailjs.send('service_4ymv197', 'template_pd9ggzz', templateParams)
+  .then(function (response) {
+    alert('Message sent successfully!');
+  }, function (error) {
+    alert('Failed to send message. Error: ' + JSON.stringify(error));
+  });
+
 		});
 	</script>
 
